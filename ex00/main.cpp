@@ -8,15 +8,14 @@ int main()
     {
         v.push_back(rand() % 13);
     }
-    for(size_t i = 0; i < v.size(); i++)
+    for (std::vector<int>::iterator it = v.begin(); it != v.end(); ++it)
     {
-        std::cout << v[i] << " ";
+        std::cout << *it << " ";
     }
-    std::cout << std::endl;
-    
+    std::cout<< std::endl;
     try
     {
-        std::vector<int>::iterator it = easyfind(v, 5);
+        std::vector <int>::iterator it = easyfind(v, 5);
         std::cout << "Value found: " << *it << std::endl;
     }
     catch(std::exception &e)

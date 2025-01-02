@@ -16,11 +16,11 @@ int main()
     try
     {
         std::vector <int>::iterator it = easyfind(v, 5);
-        std::cout << "Value found: " << *it << std::endl;
+        std::cout<< GREEN << "Value found: " << *it << NORMAL <<std::endl;
     }
-    catch(std::exception &e)
+    catch(const char *e)
     {
-        std::cout<<e.what()<<std::endl;
+        std::cout<< RED <<e<< NORMAL <<std::endl;
     }
     return 0;
 }

@@ -4,12 +4,9 @@
 #include <iostream>
 #include <vector>
 
-class ValueNotFoundException : public std::exception
-{
-    public:
-        ValueNotFoundException();
-        virtual const char *what() const throw();
-};
+#define GREEN   "\033[32m"
+#define RED     "\033[31m"
+#define NORMAL  "\033[0m"
 
 template <typename T>
 typename T::iterator easyfind(T &container, int value);

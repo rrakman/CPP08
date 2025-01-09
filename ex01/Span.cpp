@@ -80,5 +80,3 @@ void Span::printList()
     }
     std::cout << std::endl;
 }
-
-

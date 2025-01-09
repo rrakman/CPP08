@@ -13,7 +13,6 @@ int main()
     try
     {
         Span sp = Span(10000);
-        
         std::vector<int> v(100);
         std::generate(v.begin(), v.end(), random_int_generator);
         
@@ -21,7 +20,6 @@ int main()
         
         std::cout << "longest Span : " << sp.longestSpan() << std::endl;
         std::cout << "shortest Span : " << sp.shortestSpan() << std::endl;
-    
     }
     catch (const char *e)
     {
